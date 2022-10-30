@@ -1,22 +1,17 @@
-﻿using ALXCourse.Lessons.Classes;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ALXCourse.Lessons.L1.Classes;
 
-namespace ALXCourse.Lessons
+namespace ALXCourse.Lessons.L1
 {
     public class L1Constructors
     {
-         public static void Test()
+        public static void Test()
         {
-            var spider = new Spider("RED","MAD","Alonzo",true, "Female");
-           // spider.Name = "Filipo";
-           // spider.Species = "MoodKiller";
-           // spider.Color = "Red";
-           // spider.Sex = "Female";
-           // spider.IsVenomous = true;
+            var spider = new Spider("RED", "MAD", "Alonzo", true, "Female");
+            // spider.Name = "Filipo";
+            // spider.Species = "MoodKiller";
+            // spider.Color = "Red";
+            // spider.Sex = "Female";
+            // spider.IsVenomous = true;
             spider.Present();
 
             var redsipider = new Spider();

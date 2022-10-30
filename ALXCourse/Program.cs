@@ -1,5 +1,5 @@
-﻿using ALXCourse.Lessons;
-using ALXCourse.Lessons.Classes;
+﻿using ALXCourse.Lessons.L1.Classes;
+using ALXCourse.Lessons.L1;
 
 Console.Write("Marcin Dziadzio\n");
 Console.WriteLine("ALX");

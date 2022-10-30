@@ -1,11 +1,11 @@
-﻿using ALXCourse.Lessons.Classes;
+﻿using ALXCourse.Lessons.L1.Classes;
 
-namespace ALXCourse.Lessons
+namespace ALXCourse.Lessons.L1
 {
     public class L1ObjectVariables
     {
-          public static void Test()
-          {
+        public static void Test()
+        {
             Console.WriteLine("Variables");
             Dog dog = new Dog();
             dog.Jump();
@@ -23,7 +23,7 @@ namespace ALXCourse.Lessons
             cat.Eat();
             cat.Sleep();
             Console.WriteLine("");
-          }
+        }
 
         public void T2()
         {
@@ -45,7 +45,7 @@ namespace ALXCourse.Lessons
             Console.WriteLine("Number of famale pups: ________ " + westieDog.Breed().NumberOfFemalePups);
             westieDog.Jump();
             westieDog.Bark();
-            Console.WriteLine(westieDog.Add(2,4));
+            Console.WriteLine(westieDog.Add(2, 4));
             Console.WriteLine(westieDog.GetOlderAge());
         }
     }
