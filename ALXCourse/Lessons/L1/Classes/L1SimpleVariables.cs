@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace ALXCourse.Lessons.L1.Classes
 {
     public class L1SimpleVariables
     {
-        public static void Test()
+        public static void Run()
         {
             bool whySoSerious = true;
             Console.WriteLine(whySoSerious);

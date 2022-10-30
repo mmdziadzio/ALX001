@@ -4,7 +4,7 @@ namespace ALXCourse.Lessons.L1
 {
     public class L1ObjectVariables
     {
-        public static void Test()
+        public static void Run()
         {
             Console.WriteLine("Variables");
             Dog dog = new Dog();

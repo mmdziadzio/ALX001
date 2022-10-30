@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace ALXCourse.Lessons.L1.Classes
 {
     public class L1Strings
     {
-        public static void Test()
+        public static void Run()
         {
             string name = "Mateusz";
             name = "Ala";

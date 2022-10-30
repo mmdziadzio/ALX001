@@ -4,7 +4,7 @@ namespace ALXCourse.Lessons.L1
 {
     public class L1Constructors
     {
-        public static void Test()
+        public static void Run()
         {
             var spider = new Spider("RED", "MAD", "Alonzo", true, "Female");
             // spider.Name = "Filipo";
