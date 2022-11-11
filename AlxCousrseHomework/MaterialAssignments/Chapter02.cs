@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AlxCousrseHomework.MaterialAssignments
+﻿namespace AlxCousrseHomework.MaterialAssignments
 {
-    internal class Chapter02
+    public class Chapter02
     {
         public string Chapter = "Chapter 02";
 
@@ -25,11 +19,35 @@ namespace AlxCousrseHomework.MaterialAssignments
             Console.WriteLine();
         }
 
+        public static void Task02()
+        {
+            bool a = true;
+            bool b = true;
+            bool Res;
+
+            Console.WriteLine();
+            Console.WriteLine("Ćwiczenie 2");
+            Res = a;
+            Console.WriteLine($" dla zmiennej A wynik to : {Res}");
+            Res = b;
+            Console.WriteLine($" dla zmiennej B wynik to : {Res}");
+            Res = a&b;
+            Console.WriteLine($" dla sumy logicznej A i B wynik to : {Res}");
+            Res = !a & b;
+            Console.WriteLine($" dla sumy logicznej neacji A i B wynik to : {Res}");
+            Res = a & !b;
+            Console.WriteLine($" dla sumy logicznej A i negacji B wynik to : {Res}");
+            Res = !a & !b;
+            Console.WriteLine($" dla sumy logicznej negacji A i negacji B wynik to : {Res}");
+            Console.WriteLine();
+        }
+
         public static void Run()
         {
             Console.WriteLine();
             Console.WriteLine("Rozdział 2");
             Chapter02.Task01();
+            Chapter02.Task02();
         }
     }
 }

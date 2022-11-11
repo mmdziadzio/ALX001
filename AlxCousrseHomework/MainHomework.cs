@@ -17,4 +17,7 @@ Console.ReadLine();
 Console.WriteLine();
 Chapter02.Run();
 Console.ReadLine();
+Console.WriteLine();
+Chapter03.Run();
+Console.ReadLine();
 
