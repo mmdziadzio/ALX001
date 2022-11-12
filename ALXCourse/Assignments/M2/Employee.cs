@@ -16,6 +16,5 @@
             Quality = quality;
             Experience = experience;
         }
-
     }
 }

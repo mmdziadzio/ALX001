@@ -15,7 +15,6 @@
 
         public void ClassifySeniorityBySalary(Employee employee)
         {
-            //...
             if (employee.Quality < 10000)
             {
                 JuniorEmployees.Add(employee);
@@ -25,11 +24,13 @@
                 MidEmployees.Add(employee);
             }
             else
+            {
                 SeniorEmployees.Add(employee);
+            }
         }
+
         public void ClassifySeniorityByExperience(Employee employee)
         {
-            //...
             if (employee.Experience < 2.5)
             {
                 JuniorEmployees.Add(employee);
@@ -39,7 +40,9 @@
                 MidEmployees.Add(employee);
             }
             else
+            {
                 SeniorEmployees.Add(employee);
+            }
         }
 
         public void ClearLists()
