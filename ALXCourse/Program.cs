@@ -2,6 +2,7 @@
 using ALXCourse.Lessons.L1;
 using ALXCourse.Lessons.Tasks;
 using ALXCourse.Lessons.L2;
+using ALXCourse.Assignments.M2;
 
 Console.Write("Marcin Dziadzio\n");
 Console.WriteLine("ALX");
@@ -16,7 +17,9 @@ Console.WriteLine("ALX");
 // ----------- L2
 //L2Conditionalscs.Run();
 // Chess
-L2EnumAndSwitch.Run();
+//L2EnumAndSwitch.Run();
+
+SeniorityServiceTest.Run();
 
 // ZADANIA PDF
 //TasksLoader.RunChapter01();
