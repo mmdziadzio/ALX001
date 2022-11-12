@@ -2,7 +2,7 @@
 using System;
 using System.Diagnostics;
 
-namespace ALXCourse.Lessons.L2
+namespace ALXCourse.Lessons.M1.L2
 {
     public class L2Conditionalscs
     {

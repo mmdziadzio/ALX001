@@ -1,7 +1,7 @@
 ﻿
-using ALXCourse.Lessons.L2.Enums;
+using ALXCourse.Lessons.M1.L2.Enums;
 
-namespace ALXCourse.Lessons.L2
+namespace ALXCourse.Lessons.M1.L2
 {
     public class ChessFigure
     {
