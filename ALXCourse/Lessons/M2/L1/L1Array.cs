@@ -40,6 +40,13 @@ namespace ALXCourse.Lessons.M2.L1
             shopingArray[4] = "gun";
             ShowArrry(shopingArray);
         }
+        public static void Run3()
+        {
+            int[,] intMatrix = new int[2, 2];
+            int[,] intMatrix1 =  { { 1, 2 }, { 3, 4 } };
+            int[,] intMatrix2 = new int[7, 7];
+            Show2DArray(intMatrix2);
+        }
         public static void ShowArrry(int[] array)
         {
             foreach(int i in array)
@@ -56,6 +63,18 @@ namespace ALXCourse.Lessons.M2.L1
                 Console.Write($"{item} ");
             }
             Console.WriteLine();
+        }
+
+        public static void Show2DArray(int[,] matrix)
+        {
+            for (int iterator=0; iterator < matrix.GetLength(0); iterator++)
+            {
+                for (int iterator1 = 0; iterator1 < matrix.GetLength(1); iterator1++)
+                {
+                    Console.Write($"{matrix[iterator, iterator1]} ");
+                }
+                Console.WriteLine();
+            }
         }
     }
 }

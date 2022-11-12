@@ -1,31 +1,37 @@
-﻿namespace ALXCalculator
+﻿using System.Net;
+
+namespace ALXCalculator
 {
     public class Calculator
     {
         public void Run()
         {
-            
+
             // Console.WriteLine($"{x} + {y} = {Add(x, y)}");
             // Console.WriteLine($"{x} - {y} = {Substract(x, y)}");
             // Console.WriteLine($"{x} * {y} = {Multiply(x, y)}");
             // Console.WriteLine($"{x} / {y} = {Divide(x, y)}");
 
-
+            char operationChar;
             Console.WriteLine("Operation: ...");
             Console.WriteLine("+      Addittion: ...");
             Console.WriteLine("-      Substraction: ...");
             Console.WriteLine("*      Multiplication: ...");
             Console.WriteLine("/      Division: ...");
             Console.WriteLine();
-            Console.WriteLine("Choose Operation: ...");
-            var operationChar = Console.ReadKey();
-            Console.WriteLine();
-            Console.WriteLine("Running calculator...");
-            Console.Write("X number: ");
-            var x = Double.Parse(Console.ReadLine());
-            Console.Write("Y number: ");
-            var y = Double.Parse(Console.ReadLine());
-            PerformOperation(operationChar.KeyChar, x, y);
+            Console.WriteLine("Or pres N to end application");
+            do
+            {
+                Console.WriteLine("Choose Operation: ...");
+                operationChar = Console.ReadKey().KeyChar;
+                Console.WriteLine();
+                Console.WriteLine("Running calculator...");
+                Console.Write("X number: ");
+                var x = Double.Parse(Console.ReadLine());
+                Console.Write("Y number: ");
+                var y = Double.Parse(Console.ReadLine());
+                PerformOperation(operationChar, x, y);
+            } while (operationChar != 'N');
         }
         private void PerformOperation(char operationChar, double x, double y)
         {

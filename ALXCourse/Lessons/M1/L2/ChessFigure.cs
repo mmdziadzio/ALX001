@@ -1,5 +1,4 @@
-﻿
-using ALXCourse.Lessons.M1.L2.Enums;
+﻿using ALXCourse.Lessons.M1.L2.Enums;
 
 namespace ALXCourse.Lessons.M1.L2
 {
