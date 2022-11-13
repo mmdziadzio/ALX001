@@ -1,4 +1,5 @@
 ﻿using ALXCourse.Assignments.M2;
+using ALXCourse.Assignments.M2.L2;
 using ALXCourse.Lessons.M1.L1;
 using ALXCourse.Lessons.M1.L2;
 using ALXCourse.Lessons.M2.L1;
@@ -40,4 +41,7 @@ Console.WriteLine("Do WHILE\n");
 L1Loops.RunDoWhile();*/
 //L1Array.Run3();
 
-L1Dictionaries.Run1();
+//L1Dictionaries.Run1();
+
+// Dzień 4
+BookStorageApp.Run();

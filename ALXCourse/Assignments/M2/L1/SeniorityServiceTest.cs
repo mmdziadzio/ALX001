@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Net.Security;
 
-namespace ALXCourse.Assignments.M2
+namespace ALXCourse.Assignments.M2.L1
 {
     public static class SeniorityServiceTest
     {
@@ -24,11 +24,11 @@ namespace ALXCourse.Assignments.M2
             seniorityService.ClassifySeniorityBySalary(Emp006);
             Console.WriteLine("podział poprzez Wypłatę ");
             Console.WriteLine("Juniors: ");
-            SeniorityServiceTest.PresentEmployees(seniorityService.JuniorEmployees);
+            PresentEmployees(seniorityService.JuniorEmployees);
             Console.WriteLine("Mids: ");
-            SeniorityServiceTest.PresentEmployees(seniorityService.MidEmployees);
+            PresentEmployees(seniorityService.MidEmployees);
             Console.WriteLine("Seniors: ");
-            SeniorityServiceTest.PresentEmployees(seniorityService.SeniorEmployees);
+            PresentEmployees(seniorityService.SeniorEmployees);
             Console.WriteLine();
             seniorityService.ClearLists();
 
@@ -41,11 +41,11 @@ namespace ALXCourse.Assignments.M2
             seniorityService.ClassifySeniorityByExperience(Emp006);
             Console.WriteLine("podział poprzez Doświadczenie ");
             Console.WriteLine("Juniors: ");
-            SeniorityServiceTest.PresentEmployees(seniorityService.JuniorEmployees);
+            PresentEmployees(seniorityService.JuniorEmployees);
             Console.WriteLine("Mids: ");
-            SeniorityServiceTest.PresentEmployees(seniorityService.MidEmployees);
+            PresentEmployees(seniorityService.MidEmployees);
             Console.WriteLine("Seniors: ");
-            SeniorityServiceTest.PresentEmployees(seniorityService.SeniorEmployees);
+            PresentEmployees(seniorityService.SeniorEmployees);
             Console.WriteLine();
             seniorityService.ClearLists();
         }

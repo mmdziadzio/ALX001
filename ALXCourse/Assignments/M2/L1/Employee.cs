@@ -1,4 +1,4 @@
-﻿namespace ALXCourse.Assignments.M2
+﻿namespace ALXCourse.Assignments.M2.L1
 {
     public class Employee
     {
