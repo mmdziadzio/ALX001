@@ -47,4 +47,6 @@ L1Loops.RunDoWhile();*/
 // Dzień 4
 //BookStorageApp.Run();
 //L2GettersAndSetters.Run();
-L2Encapsulation.Run();
+//L2Encapsulation.Run();
+//L2Interfaces.Run();
+L2Inheritance.Run();
