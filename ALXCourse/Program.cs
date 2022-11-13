@@ -3,6 +3,7 @@ using ALXCourse.Assignments.M2.L2;
 using ALXCourse.Lessons.M1.L1;
 using ALXCourse.Lessons.M1.L2;
 using ALXCourse.Lessons.M2.L1;
+using ALXCourse.Lessons.M2.L2;
 using System;
 
 Console.Write("Marcin Dziadzio\n");
@@ -44,4 +45,6 @@ L1Loops.RunDoWhile();*/
 //L1Dictionaries.Run1();
 
 // Dzień 4
-BookStorageApp.Run();
+//BookStorageApp.Run();
+//L2GettersAndSetters.Run();
+L2Encapsulation.Run();
