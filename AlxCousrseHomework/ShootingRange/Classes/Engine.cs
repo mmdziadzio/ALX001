@@ -4,7 +4,14 @@
     {
         public static string numberFromKeybord { get; set; }
 
-        public static void MenuEngine()
+        public Warehouse warehouse;
+
+        public Engine()
+        {
+            warehouse = new Warehouse();
+        }
+
+        public void MenuEngine()
         {
            numberFromKeybord = "0";
             while ( Int32.Parse(numberFromKeybord) < 10)
@@ -25,8 +32,8 @@
                         {
                             Console.Clear();
                             Graphics.SrSbUpMenu("LISTA BRONI");
-                            Warehouse.WeponsListGuns();
-                            Warehouse.WeponsListRifles();
+                            warehouse.WeponsListGuns();
+                            warehouse.WeponsListRifles();
                             Graphics.SrSbDownMenu();
                             Console.ReadLine();
                             numberFromKeybord = "0";
@@ -57,7 +64,7 @@
             }   
         }
 
-        public static void Paragon()
+        public void Paragon()
         {
             int bron = 0;
             double wartosc = 0.0;
@@ -82,7 +89,7 @@
                         {
                             Console.Clear();
                             Graphics.SrSbUpMenu("LISTA PISTOLETÓW");
-                            Warehouse.WeponsListGuns();
+                            warehouse.WeponsListGuns();
                             Graphics.SrMenuLine();
                             Console.Write("Wybierz Broń : ");
                             bron = Int32.Parse(Console.ReadLine());
@@ -114,7 +121,7 @@
                         {
                             Console.Clear();
                             Graphics.SrSbUpMenu("LISTA KARABINÓW");
-                            Warehouse.WeponsListRifles();
+                            warehouse.WeponsListRifles();
                             Graphics.SrMenuLine();
                             Console.Write("Wybierz Broń : ");
                             bron = Int32.Parse(Console.ReadLine());

@@ -6,10 +6,11 @@ namespace AlxCousrseHomework.ShootingRange
     {
         public static void Run()
         {
+            var engine = new Engine();
             Graphics.SrLogo();
             Graphics.SrMenu();
             Console.WriteLine();
-            Engine.MenuEngine();
+            engine.MenuEngine();
         }
     }
 }

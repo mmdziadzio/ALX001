@@ -2,13 +2,19 @@
 
 namespace AlxCousrseHomework.ShootingRange.Classes
 {
-    public static class Warehouse
+    public class Warehouse
     {
-        public static List<Gun> Guns { get; set; }
+        public List<Gun> Guns { get; set; }
 
-        public static List<Rifle> Rifles { get; set; }
+        public List<Rifle> Rifles { get; set; }
 
-        public static void WeponsListGuns()
+        public Warehouse()
+        {
+            Guns = new List<Gun>();
+            Rifles = new List<Rifle>(); 
+        }
+
+        public void WeponsListGuns()
         {
             // PISTOLETY
 
@@ -40,7 +46,7 @@ namespace AlxCousrseHomework.ShootingRange.Classes
             PresentWepons(Guns);
         }
 
-        public static void WeponsListRifles()
+        public void WeponsListRifles()
         {
             // KARABINY
 
@@ -72,14 +78,14 @@ namespace AlxCousrseHomework.ShootingRange.Classes
             PresentWepons(Rifles);
         }
 
-        public static void PresentWepons(List<Gun> weppons) 
+        public void PresentWepons(List<Gun> weppons) 
         {
             foreach (var weppon in weppons)
             {
                 Console.WriteLine($"[{weppon.Tag}] Pistolet: {weppon.Name} Magazynek na {weppon.Bullets} naboi | Cena za użycie {weppon.PriceForUse} | Cena za pocisk {weppon.PriceForBullet} | ");
             }
         }
-        public static void PresentWepons(List<Rifle> weppons)
+        public void PresentWepons(List<Rifle> weppons)
         {
             foreach (var weppon in weppons)
             {
