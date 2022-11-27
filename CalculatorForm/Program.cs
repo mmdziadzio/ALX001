@@ -1,7 +1,4 @@
-using CourseFormApp.Exceptions;
-using Microsoft.VisualBasic.Logging;
-
-namespace CourseFormApp
+namespace CalculatorForm
 {
     internal static class Program
     {
@@ -13,20 +10,8 @@ namespace CourseFormApp
         {
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
-            var log = string.Empty;
             ApplicationConfiguration.Initialize();
-            try
-            {
-                Application.Run(new CourseFormApp());
-            }
-            catch(OuerOwnException ex)
-            {
-                log = ex.Message;
-            }
-            catch(Exception ex) 
-            {
-                log = ex.Message;
-            }
+            Application.Run(new CalculatorForm());
         }
     }
 }

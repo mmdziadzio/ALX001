@@ -1,3 +1,6 @@
+using CourseFormApp.Exceptions;
+using System.Linq.Expressions;
+
 namespace CourseFormApp
 {
     public partial class CourseFormApp : Form
@@ -14,7 +17,23 @@ namespace CourseFormApp
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("A jednak klikn¹³ no !");
+            // throw new OuerOwnException("Do not Click tkis button!!!");
+            var throwExceptionExample = new ThrowExceptionExample();
+            try 
+            {
+                throwExceptionExample.Run();
+                MessageBox.Show("A jednak klikn¹³ no !");
+            }
+            catch ( OuerOwnException ex)
+            {
+                LogBox.Text += ex.Message + "\r\n";
+                LogBox.Text += ex.StackTrace + "\r\n";
+            }
+            catch (Exception ex)    
+            {
+                LogBox.Text += ex.Message;
+                LogBox.Text += ex.StackTrace;
+            }
         }
 
         private void RestartButton_Click(object sender, EventArgs e)
@@ -38,14 +57,23 @@ namespace CourseFormApp
                     zWynik = Double.Parse(XBox.Text) + Double.Parse(YBox.Text);
                     Wynik.Text = Convert.ToString(zWynik);
                 }
+                catch(FormatException ex)
+                {
+                    var exceptionMeesage = ("Format Exception caught!\r\n");
+                    LogBox.Text += exceptionMeesage;
+                    LogBox.Text += ex.Message;
+                    LogBox.Text += ex.StackTrace;
+                }
                 catch(Exception ex)
                 {
-                    LogBox.Text = ex.Message;
                     Wynik.Text = "Invalid operation";
+                    LogBox.Text += ex.Message;
+                    LogBox.Text += ex.StackTrace;
+                    LogBox.Text += ex.Source;
                 }
                 finally
                 {
-                    MessageBox.Show("Fina³");
+                  //  MessageBox.Show("Fina³");
                 }
             } 
             else if (SubRB.Checked == true)
@@ -67,6 +95,10 @@ namespace CourseFormApp
             {
                 Wynik.Text = Wynik.Text;
             }
+        }
+
+        private void CourseFormApp_Load(object sender, EventArgs e)
+        {
 
         }
     }

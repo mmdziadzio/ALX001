@@ -256,6 +256,7 @@
             this.Controls.Add(this.button1);
             this.Name = "CourseFormApp";
             this.Text = "ALX Course Form APP";
+            this.Load += new System.EventHandler(this.CourseFormApp_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
